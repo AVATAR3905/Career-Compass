@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <title>Career Compass</title>
+</head>
+
+<body>
+    <!-- <=====================NAVBAR=====================> -->
+    <header class="header" id="header">
+        <div class="main_logo">
+            <a href="#" class="nav_logo">
+                <i class="ri-compass-discover-line"></i>Career Compass
+            </a>
+        </div>
+        <div class="right_links">
+            <a href="#home" class="home" id="home-link">
+                <i class="ri-home-line">Home</i>
+                <span></span>
+            </a>
+            <a href="#Category" class="category" id="categorization">
+                <i class="ri-book-shelf-line">Category &#x25BC;</i>
+                <span></span>
+            </a>
+            <a href="#Chatbox" class="featured" id="featured-link">
+                <i class="ri-chat-1-fill">Chatbox</i>
+                <span></span>
+            </a>
+            <a href="#Testimonal" class="testimonal" id="testimonal-link">
+                <i class="ri-message-3-line">Consultants</i>
+                <span></span>
+            </a>
+        </div>
+        <div class="nav_actions">
+            <i class="ri-search-line" id="search-button" class="button"></i>
+            <i class="ri-user-3-line" id="login-button" class="button"></i>
+            <a href="profile.html" class="profile"><i class="ri-profile-fill" class="button" id="theme-button"></i></a>
+        </div>
+        <div class="dropdown__menu" id="category">
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Mentorship</a></li>
+                <li><a href="#">Internship</a></li>
+                <li><a href="#">Job Openings</a></li>
+                <li><a href="#">Courses</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- <=====================SEARCH BAR=====================> -->
+    <div class="search" id="search-content">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+        </form>
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+
+
+    <!-- <=====================LOGIN FORM=====================> -->
+    <div class="login grid" id="login-content">
+        <form action="" class="login__form grid">
+            <h3 class="login__title">Log In</h3>
+            <div class="login__group grid">
+                <div>
+                    <label for="login-email" class="login__label">Email</label>
+                    <input type="email" placeholder="Write your email" class="login__input" id="login-email">
+                </div>
+                <div>
+                    <label for="login-pass" class="login__label">Password</label>
+                    <input type="password" placeholder="Write your password" class="login__input" id="login-pass">
+                </div>
+            </div>
+            <div>
+                <span class="login__signup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </span>
+
+                <a href="#" class="login__forgot">
+                    You forgot your password
+                </a>
+                <a href="#" class="login__button button1">Log In</a>
+            </div>
+        </form>
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <!-- <=====================MAIN CONTENT=====================> -->
+    <main class="main-content">
+
+    <!-- <=====================HOME SECTION=====================> -->
+        <section class="first-section" id="home-section">
+            <div class="left-content">
+                <h1 class="heading">Navigate Your Future<br>
+                </h1>
+                <span class="career-span"> Career Journey</span>
+
+                <p class="paragraph-description">Career Compass uses advanced AI to help you navigate your professional journey. Get personalized guidance, explore options, and take the next step with confidence. </p>
+
+                <div class="home-buttons">
+                    <a href="#" class="button2">Explore Now
+                    </a>
+                    <a href="" class="button3">Book Consultant &rarr;</a>
+                </div>
+            </div>
+            <div class="right-content">
+                <article>
+                    <img src="website_image.jpg" alt="" width="680px" class="article-1">
+                </article>
+            </div>
+        </section>
+
+        <!-- <=====================SERVICES SECTION=====================> -->
+        <section class="services-section" id="services">
+            <div class="services__container grid">
+                <article class="services__card">
+                    <i class="ri-user-follow-fill"></i>
+                    <h3 class="services__title">Free Consultant</h3>
+                    <p class="services__description">One TIme Per Month</p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-lock-2-line"></i>
+                    <h3 class="services__title">Secure Payment</h3>
+                    <p class="services__description">100% Secure Payment</p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-customer-service-2-line"></i>
+                    <h3 class="services__title">24/7 Support</h3>
+                    <p class="services__description">Call us anytime</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- <=====================FEATURED SECTION=====================> -->
+        <section class="featured-section" id="discount">
+            <h1 class="featured-heading">YOLO Chatbox</h1>
+              
+              <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                  <div class="chat-message bot-message" style="animation-delay: 0.1s;">
+                    <div>Hello! I'm your Career Compass assistant. How can I help with your career questions today?</div>
+                    <span class="timestamp">9:00 AM</span>
+                  </div>
+                </div>
+                
+                <div class="typing-indicator" id="typingIndicator">
+                  <div class="typing-dots">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                  </div>
+                </div>
+                
+                <div class="chat-input-container">
+                  <form class="chat-input-form" id="messageForm">
+                    <input type="text" class="message-input" id="messageInput" style="color: black;" placeholder="Type your message..." autocomplete="off">
+                    <button type="submit" class="send-button">
+                      <svg class="send-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </div>                
+        </section>
+
+        <!-- <=====================CONSULTANT SECTION=====================> -->
+        <section class="testimonal-section" id="testimonal-section">
+            <h2 class="testimonal-heading">Our Consultants</h2>
+            <div class="testimonal-boxes">
+                <div class="left-testimonal">
+                    <i class="ri-double-quotes-r double-quotes"></i>
+
+                    <p class="testi-paragraph">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+
+                    <a class="left-image inline-flex items-center">
+                        <img alt="testimonial" src="testimonial-perfil-1.png" class="left__image">
+                        <span class="left-designation">
+                          <span class="left-name">Holden Caulfield</span>
+                          <span class="left-post">Academic Expert</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="left-testimonal">
+                    <i class="ri-double-quotes-r double-quotes"></i>
+
+                    <p class="testi-paragraph">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+
+                    <a class="left-image in">
+                        <img alt="testimonial" src="testimonial-perfil-2.png" class="left__image">
+                        <span class="left-designation">
+                          <span class="left-name">Holden Caulfield</span>
+                          <span class="left-post">Avisor Specialist</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="right-testimonal">
+                    <i class="ri-double-quotes-r double-quotes"></i>
+
+                    <p class="testi-paragraph">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+
+                    <a class="right-image">
+                        <img alt="testimonial" src="testimonial-perfil-3.png" class="right__image">
+                        <span class="right-designation">
+                          <span class="right-name">Alper Kamu</span>
+                          <span class="right-post">Research Specialist</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- <=====================FOOTER=====================> -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo-section">
+                <div class="logo-icon">
+                    <i class="ri-compass-discover-line" width="250px"></i>
+                    <h3>Career Compass</h3>
+                </div>
+                <div class="logo-text">
+                    <p>The most trusted website AI Powered Educational System</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>ABOUT</h4>
+                    <a href="#">Awards</a>
+                    <a href="#">FAQ's</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms of Services</a>
+                </div>
+                <div class="link-column">
+                    <h4>COMPANY</h4>
+                    <a href="#">Blogs</a>
+                    <a href="#">Community</a>
+                    <a href="#">Our team</a>
+                    <a href="#">Help center</a>
+                </div>
+                <div class="link-column">
+                    <h4>CONTACT</h4>
+                    <a href="#">John Smith</a>
+                    <a href="#">New York, 271-Street</a>
+                    <a href="#">e-book@gmail.com</a>
+                    <a href="#">444-224-456</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 E-book — <a href="https://twitter.com/knyttneve" target="_blank">@knyttevene</a></p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="ri-facebook-fill"></i></a>
+                <a href="#" class="social-icon"><i class="ri-instagram-line"></i></a>
+                <a href="#" class="social-icon"><i class="ri-twitter-x-fill"></i></a>
+                <a href="#" class="social-icon"><i class="ri-linkedin-fill"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+<script src="index.js"></script>
